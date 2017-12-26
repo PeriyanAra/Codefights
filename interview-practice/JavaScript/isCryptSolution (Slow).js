@@ -1,3 +1,7 @@
+/*
+Slow version, hasn't passed test No 19
+*/
+
 function isCryptSolution(crypt, solution) {
     const store = new Map(solution);
     let a = '';
