@@ -1,0 +1,21 @@
+function firstNotRepeatingCharacter(s) {
+    let result = new Set();
+    let repeated = new Set();
+    
+    for(let i = 0; i < s.length; i++){
+        if(result.has(s[i]) == false && repeated.has(s[i]) == false){
+            result.add(s[i]);
+        }
+        else if(result.has(s[i]) == true){
+            result.delete(s[i]);
+            repeated.add(s[i]);
+        }
+    }
+    
+    return [...result][0] ? [...result][0] : '_';
+}
+
+
+/*
+
+*/
