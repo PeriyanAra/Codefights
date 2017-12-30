@@ -7,7 +7,6 @@
 function addTwoHugeNumbers(a, b) {
     let arr1 = [];
     let arr2 = [];
-    let maxLen;
     let result = [];
     
     /* Make array from lists */
