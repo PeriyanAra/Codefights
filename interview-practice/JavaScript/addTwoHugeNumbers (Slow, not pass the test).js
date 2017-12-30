@@ -10,16 +10,17 @@ function addTwoHugeNumbers(a, b) {
     let maxLen;
     let result = [];
     
-    /* Make array from 1st list */
-    while(a != null){
-        arr1.push(a.value);
-        a = a.next;
-    }
-    
-    /* Make array from 2nd list */
-    while(b != null){
-        arr2.push(b.value);
-        b = b.next;
+    /* Make array from lists */
+    while(a != null || b != null){
+        if(a){
+            arr1.push(a.value);
+            a = a.next;
+        }
+        
+        if(b){
+            arr2.push(b.value);
+            b = b.next;
+        }
     }
     
     if(arr1.length >= arr2.length){
