@@ -23,13 +23,6 @@ function addTwoHugeNumbers(a, b) {
         }
     }
     
-    if(arr1.length >= arr2.length){
-        maxLen = arr1.length;
-    }
-    else{
-        maxLen = arr2.length;
-    }
-    
     let i = arr1.length - 1;
     let j = arr2.length - 1;
     let num;
@@ -59,7 +52,7 @@ function addTwoHugeNumbers(a, b) {
         
         result.unshift(num);
     }
-    while(result.length < maxLen)
+    while(i >= 0 || j >= 0)
         
     if(result[0] == 0 && result.length > 3){
         result.unshift(1);
